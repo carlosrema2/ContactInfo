@@ -24,29 +24,28 @@ This will create a new contact in the NoSQL cloudant database.
 Request body:
 
 {
-  "name": {
-    "first": "Harold",
-    "middle": "Francis",
-    "last": "Gilkey
-  },
-  "address": {
-    "street": "8360 High Autumn Row",
-    "city": "Cannon",
-    "state": "Delaware",
-    "zip": "19797"
-  },
-  "phone": [
-    {
-      "number": "302-611-9148",
-      "type": "home"
-    },
-    {
-      "number": "302-532-9427",
-      "type": "mobile"
-    }
-  ],
-  "email": "harold.gilkey@yahoo.com"
-}
+        name: {
+          first: 'Alexander',
+          middle: 'Salinas',
+          last: 'Franco'
+        },
+        address: {
+          street: '1442 N Bosworth Av',
+          city: 'Chicago',
+          state: 'Ilinois',
+          zip: '60624'
+        },
+        phone: [{
+          number: '773-453-4322',
+          type: 'home'
+        },
+        {
+          number: '773-745-5444',
+          type: 'mobile'
+        }
+        ],
+        email: 'hAlex12@gmial.com'
+      };
 
 Istanbul & Travis
 Istanbul is the code coverage tool and is defined with the following minimum code coverage:
@@ -66,16 +65,3 @@ check:
     lines: 75
     branches: 50
     functions: 100
-These settings are defined in .istanbul.yml. For all available options go to: ..\node_modules\istanbul
-
-Win
-
-node  .\lib\cli.js help config
-Mac/Linux
-
-istanbul help config
-to ignore branches you can use:
-
-/* istanbul ignore if */
-/* istanbul ignore else */
-/* istanbul ignore next */
