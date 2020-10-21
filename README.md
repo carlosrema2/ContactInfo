@@ -4,8 +4,8 @@ Contact Entry
 A simple contact entry system with REST APIs that will enable a client to perform CRUD operations on the contact collection.
 
 Installation
-1. git clone https://github.com/pawanpinjarkar/contact-entry.git
-2. cd contact-entry
+1. git clone https://github.com/carlosrema2/ContactInfo
+2. cd ContactInfo
 3. npm install
 4. export the environment variables described below
 5. npm start
