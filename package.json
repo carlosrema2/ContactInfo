@@ -1,5 +1,5 @@
 {
-    "name": "contact-entry",
+    "name": "contactinfo",
     "version": "1.0.0",
     "description": "A simple contact entry system",
     "main": "contact-entry.js",
@@ -8,8 +8,8 @@
         "npm": "6.4.1"
     },
     "scripts": {
-        "start": "node ./bin/index.js",
-        "debug": "node --inspect-brk ./bin/index.js",
+        "start": "node ./bin/www.js",
+        "debug": "node --inspect-brk ./bin/www.js",
         "test": "./node_modules/.bin/eslint ./ && istanbul cover ./node_modules/mocha/bin/_mocha -- -t 20000 ./unit-test/*-test.js && istanbul check-coverage"
     },
     "private": false,
